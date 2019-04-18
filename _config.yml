@@ -80,4 +80,4 @@ theme: next ## 当前主题名称
 deploy:
   type: git
   repo: git@github.com:MrMeiyu/my-blog.git
-  branch: gh-pagas
+  branch: gh-pages
