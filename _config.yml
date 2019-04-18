@@ -5,10 +5,10 @@
 # Site 网站相关的内容
 title: Hexo ## 网站标题
 subtitle: ## 网站副标题
-description: ## 网站描述
+description: 学习使我快乐 ## 网站描述
 keywords:
-author: John Doe ## 您的名字
-language: ## 网站使用的语言
+author: MeiYu ## 您的名字
+language: zh-Hans ## 网站使用的语言
 timezone: ## 网站时区
 
 # URL 网址
@@ -78,4 +78,6 @@ theme: next ## 当前主题名称
 # Deployment 部署设置
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:MrMeiyu/my-blog.git
+  branch: gh-pages
