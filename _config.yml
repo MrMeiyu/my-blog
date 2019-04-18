@@ -73,7 +73,7 @@ pagination_dir: page
 # Extensions 扩展
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape 当前主题名称
+theme: next // 当前主题名称
 
 # Deployment 部署设置
 ## Docs: https://hexo.io/docs/deployment.html
