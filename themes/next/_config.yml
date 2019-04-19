@@ -94,16 +94,22 @@ index_with_subtitle: false
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
-  #categories: /categories/ || th
+  tags: /tags/ || tags
+  categories: /categories/ || th
   archives: /archives/ || archive
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
+  # schedule: /schedule/ || calendar
+  sitemap: /sitemap.xml || sitemap
+  commonweal: /404/ || heartbeat
 
 # Enable/Disable menu icons.
 menu_icons:
   enable: true
+
+# 站点地图的配置
+sitemap: 
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
 
 
 # ---------------------------------------------------------------
@@ -379,13 +385,13 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+  enable: true
+  appid: gvnnhFsSk3wwYW7W53s3MQ2X-gzGzoHsz # your leancloud application appid
+  appkey: sUgtf4LK98kqGGND7Twy3zX9 # your leancloud application appkey
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
-  avatar: mm # gravatar style
+  avatar: monsterid # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
 
@@ -397,11 +403,11 @@ valine:
 # You can get your uid from https://livere.com/insight/myCode (General web site)
 #livere_uid: your uid
 
-# Gitment
+# Gitment 基于github的评论
 # Introduction: https://imsun.net/posts/gitment-introduction/
 # You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
-  enable: true
+  enable: false
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button

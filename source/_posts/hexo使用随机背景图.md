@@ -2,12 +2,15 @@
 title: hexo-next主题使用随机背景图
 date: 2019-04-19 10:10:27
 tags: [blog, hexo, next]
-type: tags
+type:
+- Github
 ---
 
 ### 在next中使用随机的背景图片
 
 > 如果有小伙伴不想自己的页面太素了，可以加上这个背景图，每次都是随机的图片
+
+<!-- more -->
 
 1. [图片来源](https://source.unsplash.com/)
 
