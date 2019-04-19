@@ -121,14 +121,15 @@ scheme: Gemini
 # Sidebar Settings
 # ---------------------------------------------------------------
 
-# Social Links.
+# Social Links. 个人链接
 # Usage: `Key: permalink || icon`
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social: 
+  GitHub: https://github.com/MrMeiyu/ || github
+  E-Mail: mailto:mieyu10@qq.com || envelope
+  网易云: https://music.163.com/#/user/home?id=339395730 || music
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -143,13 +144,13 @@ social_icons:
   icons_only: false
   transition: false
 
-# Blog rolls
+# Blog rolls 外部链接
 links_icon: link
 links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  Title: http://example.com/
+  基于koa2的vue项目: https://github.com/MrMeiyu/koa2-fe-vue
 
 # Sidebar Avatar // 侧边栏头像
 # in theme directory(source/images): /images/avatar.gif
@@ -388,7 +389,6 @@ valine:
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
 
-
 # Support for youyan comments system.
 # You can get your uid from http://www.uyan.cc
 #youyan_uid: your uid
@@ -401,16 +401,16 @@ valine:
 # Introduction: https://imsun.net/posts/gitment-introduction/
 # You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
-  enable: false
+  enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
   language: zh-Hans # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github ID
-  github_repo: # MUST HAVE, The repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: MrMeiyu # MUST HAVE, Your Github ID
+  github_repo: my-blog # MUST HAVE, The repo you use to store Gitment comments
+  client_id: 67f417c1f45760dd83d4 # MUST HAVE, Github client id for the Gitment
+  client_secret: b40e0ff7551999c31c25039497c6993e5dff001b # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 
