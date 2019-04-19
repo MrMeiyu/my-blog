@@ -1,7 +1,8 @@
 ---
 title: hexo搭建的博客中最优雅的放大图片的方法
 date: 2019-04-18 23:22:26
-tags:
+tags: [blog, hexo, next]
+type: tags
 ---
 
 

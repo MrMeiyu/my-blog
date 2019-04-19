@@ -1,7 +1,8 @@
 ---
 title: hexo-next主题使用随机背景图
 date: 2019-04-19 10:10:27
-tags:
+tags: [blog, hexo, next]
+type: tags
 ---
 
 ### 在next中使用随机的背景图片
