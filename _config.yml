@@ -78,6 +78,9 @@ theme: next ## 当前主题名称
 # Deployment 部署设置
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo: git@github.com:MrMeiyu/my-blog.git
   branch: gh-pages
+- type: git
+  repo: git@git.dev.tencent.com:MrMeiYu/my-blog.git
+  branch: coding-pages
