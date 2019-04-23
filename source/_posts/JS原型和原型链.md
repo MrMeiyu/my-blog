@@ -2,7 +2,8 @@
 title: JS原型和原型链
 date: 2019-04-22 16:16:33
 tags: [前端, JS基础]
-type: 前端
+categories:
+- 前端
 ---
 
 ## 原型和原型链
@@ -92,4 +93,44 @@ console.log(obj.__proto__ === Object.prototype)
 
   f.printName()  // food
   f.alertName()  // food
+```
+
+## 原型链
+
+```
+  ...
+
+  f.toString() // f.__proto__.__proto__中查找 如果最上层没有的就是null
+```
+
+## 原型继承
+
+```
+  // 封装DOM查询
+
+  function Elem(id) {
+    this.elem = document.getElementById(id)
+  }
+
+  Elem.prototype.html = function(val) {
+    var elem = this.elem
+    if (val) {
+      elem.innerHTML = val
+      return this // 链式操作
+    } else {
+      return elem.innerHTML
+    }
+  } 
+
+  Elem.prototype.on = function(type, fn) {
+    var elem = this.elem
+    elem.addEventListener(type, fn)
+    return this
+  }
+
+  let div1 = new Elem('div1')
+  // console.log(div1.html())
+  div1.html('<p>hello m</p>').on('click', function() {
+    alert('clicked')
+  })
 ```
