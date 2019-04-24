@@ -11,6 +11,8 @@ categories:
 
 > 这篇属于优化篇，基础篇请前往这里 [点击我](https://mrmeiyu.github.io/my-blog/2019/04/23/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8webpack4%E6%90%AD%E5%BB%BAreact%E6%A1%86%E6%9E%B6%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/)
 
+<!-- more -->
+
 1. 整合html-webpack-plugin
 
 主要是 `public - index.html` 这个文件需要自己主动生成，且js也是自己添加，所以我们用到了这个插件
