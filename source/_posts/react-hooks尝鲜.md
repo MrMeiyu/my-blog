@@ -281,5 +281,7 @@ Hooks 是属于 JavaScript 函数，但是他们还附加了两条规则
   }
 ```
 
+完整 demo [请点击我](https://github.com/MrMeiyu/webpack4.0-react/tree/react-hooks)
+
 使用以前最好看下 [官方文档](https://reactjs.org/docs/hooks-intro.html)
 因为中文React文档还没有更新到最新的版本，所以我也是看的英文的文档
