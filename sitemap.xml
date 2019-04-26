@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/JS%E6%95%B0%E7%BB%84%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2019-04-26T06:19:08.994Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/HTML5%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86/</loc>
     
     <lastmod>2019-04-26T06:17:51.404Z</lastmod>
@@ -61,13 +68,6 @@
     <loc>https://mrmeiyu.github.io/my-blog/2019/04/23/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8webpack4%E6%90%AD%E5%BB%BAreact%E6%A1%86%E6%9E%B6%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/</loc>
     
     <lastmod>2019-04-26T03:58:21.629Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/JS%E6%95%B0%E7%BB%84%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/</loc>
-    
-    <lastmod>2019-04-26T03:50:19.856Z</lastmod>
     
   </url>
   
