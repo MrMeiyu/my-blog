@@ -9,6 +9,8 @@ categories:
 
 ## HTML5 学习整理
 
+<!-- more -->
+
 - HTML5 是 W3C 与 WHATWG 合作的结果,WHATWG 指 Web Hypertext Application Technology Working Group。
 
 - WHATWG 致力于 web 表单和应用程序，而 W3C 专注于 XHTML 2.0。在 2006 年，双方决定进行合作，来创建一个新版本的 HTML
