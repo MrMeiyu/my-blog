@@ -1,7 +1,7 @@
 ---
 title: js中的交集、并集、差集
 date: 2019-04-25 17:21:24
-tags: [前端, js]
+tags: [前端, JS]
 categories:
 - 前端
 - js

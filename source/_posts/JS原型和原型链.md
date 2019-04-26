@@ -1,7 +1,7 @@
 ---
 title: JS原型和原型链
 date: 2019-04-22 16:16:33
-tags: [前端, JS基础]
+tags: [前端, JS]
 categories:
 - 前端
 ---
