@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/24/react-hooks%E5%B0%9D%E9%B2%9C/</loc>
+    <lastmod>2019-04-26</lastmod>
+  </url>  <url>
     <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E9%A2%84%E8%A7%88/</loc>
+    <lastmod>2019-04-26</lastmod>
+  </url>  <url>
+    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E5%8E%9F%E7%94%9FJS%E6%87%92%E5%8A%A0%E8%BD%BD/</loc>
+    <lastmod>2019-04-26</lastmod>
+  </url>  <url>
+    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E5%AE%B9%E5%99%A8%E9%95%BF%E5%AE%BD%E6%AF%94/</loc>
+    <lastmod>2019-04-26</lastmod>
+  </url>  <url>
+    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E8%B7%A8%E5%9F%9F/</loc>
+    <lastmod>2019-04-26</lastmod>
+  </url>  <url>
+    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E9%94%9A%E7%82%B9/</loc>
+    <lastmod>2019-04-26</lastmod>
+  </url>  <url>
+    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8webpack4%E6%90%AD%E5%BB%BAreact%E6%A1%86%E6%9E%B6%EF%BC%88%E4%BC%98%E5%8C%96%E7%AF%87%EF%BC%89/</loc>
+    <lastmod>2019-04-26</lastmod>
+  </url>  <url>
+    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/23/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8webpack4%E6%90%AD%E5%BB%BAreact%E6%A1%86%E6%9E%B6%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/</loc>
     <lastmod>2019-04-26</lastmod>
   </url>  <url>
     <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/JS%E6%95%B0%E7%BB%84%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E6%B3%95/</loc>
@@ -10,34 +31,13 @@
     <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/25/JS%E4%B8%AD%E7%9A%84%E4%BA%A4%E9%9B%86%E3%80%81%E5%B9%B6%E9%9B%86%E3%80%81%E5%B7%AE%E9%9B%86/</loc>
     <lastmod>2019-04-26</lastmod>
   </url>  <url>
-    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E5%8E%9F%E7%94%9FJS%E6%87%92%E5%8A%A0%E8%BD%BD/</loc>
-    <lastmod>2019-04-26</lastmod>
-  </url>  <url>
     <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/22/JS%E5%8E%9F%E5%9E%8B%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
-    <lastmod>2019-04-26</lastmod>
-  </url>  <url>
-    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E9%94%9A%E7%82%B9/</loc>
     <lastmod>2019-04-26</lastmod>
   </url>  <url>
     <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E5%90%84%E7%A7%8D%E5%A7%BF%E5%8A%BF/</loc>
     <lastmod>2019-04-26</lastmod>
   </url>  <url>
-    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E8%B7%A8%E5%9F%9F/</loc>
-    <lastmod>2019-04-26</lastmod>
-  </url>  <url>
-    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/23/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8webpack4%E6%90%AD%E5%BB%BAreact%E6%A1%86%E6%9E%B6%EF%BC%88%E5%9F%BA%E7%A1%80%E7%AF%87%EF%BC%89/</loc>
-    <lastmod>2019-04-26</lastmod>
-  </url>  <url>
-    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/24/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E7%94%A8webpack4%E6%90%AD%E5%BB%BAreact%E6%A1%86%E6%9E%B6%EF%BC%88%E4%BC%98%E5%8C%96%E7%AF%87%EF%BC%89/</loc>
-    <lastmod>2019-04-26</lastmod>
-  </url>  <url>
     <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/18/%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2019-04-26</lastmod>
-  </url>  <url>
-    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/26/%E5%AE%B9%E5%99%A8%E9%95%BF%E5%AE%BD%E6%AF%94/</loc>
-    <lastmod>2019-04-26</lastmod>
-  </url>  <url>
-    <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/24/react-hooks%E5%B0%9D%E9%B2%9C/</loc>
     <lastmod>2019-04-26</lastmod>
   </url>  <url>
     <loc>https://mrmeiyu.github.io/my-blog/my-blog/2019/04/23/redux%E3%80%81mobx%E4%BC%98%E7%BC%BA%E7%82%B9/</loc>

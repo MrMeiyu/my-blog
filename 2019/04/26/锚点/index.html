@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="锚点的实现方法大概有三种使用a标签中的href属性123456789101112&amp;lt;html&amp;gt;  &amp;lt;body&amp;gt;    &amp;lt;h2&amp;gt;      &amp;lt;a href=&amp;quot;#div1&amp;quot;&amp;gt;to div1&amp;lt;/a&amp;gt;      &amp;lt;a href=&amp;quot;#div2&amp;quot;&amp;gt;to div2&amp;lt;/a&amp;gt;      &amp;lt;">
+<meta name="description" content="锚点的实现方法大概有三种">
 <meta name="keywords" content="前端,JS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="锚点">
 <meta property="og:url" content="https://mrmeiyu.github.io/my-blog/2019/04/26/锚点/index.html">
 <meta property="og:site_name" content="MeiYu的blog">
-<meta property="og:description" content="锚点的实现方法大概有三种使用a标签中的href属性123456789101112&amp;lt;html&amp;gt;  &amp;lt;body&amp;gt;    &amp;lt;h2&amp;gt;      &amp;lt;a href=&amp;quot;#div1&amp;quot;&amp;gt;to div1&amp;lt;/a&amp;gt;      &amp;lt;a href=&amp;quot;#div2&amp;quot;&amp;gt;to div2&amp;lt;/a&amp;gt;      &amp;lt;">
+<meta property="og:description" content="锚点的实现方法大概有三种">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-26T03:38:40.351Z">
+<meta property="og:updated_time" content="2019-04-26T03:58:54.682Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="锚点">
-<meta name="twitter:description" content="锚点的实现方法大概有三种使用a标签中的href属性123456789101112&amp;lt;html&amp;gt;  &amp;lt;body&amp;gt;    &amp;lt;h2&amp;gt;      &amp;lt;a href=&amp;quot;#div1&amp;quot;&amp;gt;to div1&amp;lt;/a&amp;gt;      &amp;lt;a href=&amp;quot;#div2&amp;quot;&amp;gt;to div2&amp;lt;/a&amp;gt;      &amp;lt;">
+<meta name="twitter:description" content="锚点的实现方法大概有三种">
 
 
 
@@ -452,7 +452,8 @@
       
 
       
-        <h2 id="锚点的实现方法大概有三种"><a href="#锚点的实现方法大概有三种" class="headerlink" title="锚点的实现方法大概有三种"></a>锚点的实现方法大概有三种</h2><h3 id="使用a标签中的href属性"><a href="#使用a标签中的href属性" class="headerlink" title="使用a标签中的href属性"></a>使用a标签中的href属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;h2&gt;</span><br><span class="line">      &lt;a href=&quot;#div1&quot;&gt;to div1&lt;/a&gt;</span><br><span class="line">      &lt;a href=&quot;#div2&quot;&gt;to div2&lt;/a&gt;</span><br><span class="line">      &lt;a href=&quot;#div3&quot;&gt;to div3&lt;/a&gt;</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div id=&quot;div1&quot;&gt;div1&lt;/div&gt;</span><br><span class="line">    &lt;div id=&quot;div2&quot;&gt;div2&lt;/div&gt;</span><br><span class="line">    &lt;div id=&quot;div3&quot;&gt;div3&lt;/div&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+        <h2 id="锚点的实现方法大概有三种"><a href="#锚点的实现方法大概有三种" class="headerlink" title="锚点的实现方法大概有三种"></a>锚点的实现方法大概有三种</h2><a id="more"></a>
+<h3 id="使用a标签中的href属性"><a href="#使用a标签中的href属性" class="headerlink" title="使用a标签中的href属性"></a>使用a标签中的href属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;h2&gt;</span><br><span class="line">      &lt;a href=&quot;#div1&quot;&gt;to div1&lt;/a&gt;</span><br><span class="line">      &lt;a href=&quot;#div2&quot;&gt;to div2&lt;/a&gt;</span><br><span class="line">      &lt;a href=&quot;#div3&quot;&gt;to div3&lt;/a&gt;</span><br><span class="line">    &lt;/h2&gt;</span><br><span class="line">    &lt;div id=&quot;div1&quot;&gt;div1&lt;/div&gt;</span><br><span class="line">    &lt;div id=&quot;div2&quot;&gt;div2&lt;/div&gt;</span><br><span class="line">    &lt;div id=&quot;div3&quot;&gt;div3&lt;/div&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>这种方法的缺点就是会改变URL的值。</li>
 </ul>
@@ -646,7 +647,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/my-blog/tags/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
