@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/HTML5%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86/</loc>
+    
+    <lastmod>2019-04-26T06:17:51.404Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/%E8%B7%A8%E5%9F%9F/</loc>
     
     <lastmod>2019-04-26T06:09:07.675Z</lastmod>
@@ -86,6 +93,13 @@
   </url>
   
   <url>
+    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E5%90%84%E7%A7%8D%E5%A7%BF%E5%8A%BF/</loc>
+    
+    <lastmod>2019-04-26T03:38:40.351Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://mrmeiyu.github.io/my-blog/about/index.html</loc>
     
     <lastmod>2019-04-26T03:38:40.351Z</lastmod>
@@ -94,13 +108,6 @@
   
   <url>
     <loc>https://mrmeiyu.github.io/my-blog/categories/index.html</loc>
-    
-    <lastmod>2019-04-26T03:38:40.351Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D%E7%9A%84%E5%90%84%E7%A7%8D%E5%A7%BF%E5%8A%BF/</loc>
     
     <lastmod>2019-04-26T03:38:40.351Z</lastmod>
     
@@ -128,13 +135,6 @@
   </url>
   
   <url>
-    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/hello-world/</loc>
-    
-    <lastmod>2019-04-26T03:38:40.324Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mrmeiyu.github.io/my-blog/2019/04/19/hexo%E4%BD%BF%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%83%8C%E6%99%AF%E5%9B%BE/</loc>
     
     <lastmod>2019-04-26T03:38:40.324Z</lastmod>
@@ -142,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://mrmeiyu.github.io/my-blog/404/index.html</loc>
+    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/hello-world/</loc>
     
-    <lastmod>2019-04-26T03:38:40.323Z</lastmod>
+    <lastmod>2019-04-26T03:38:40.324Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/HTML5%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86/</loc>
+    <loc>https://mrmeiyu.github.io/my-blog/404/index.html</loc>
     
     <lastmod>2019-04-26T03:38:40.323Z</lastmod>
     
