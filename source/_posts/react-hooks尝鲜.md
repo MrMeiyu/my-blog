@@ -1,10 +1,10 @@
 ---
 title: react-hooks尝鲜
 date: 2019-04-24 18:14:09
-tags: [前端, react, JS, react-hooks]
+tags: [前端, JS, React, react-hooks]
 categories:
 - 前端
-- react
+- React
 ---
 
 ## what is a Hooks?

@@ -1,10 +1,10 @@
 ---
 title: 手把手教你用webpack4搭建react框架（基础篇）
 date: 2019-04-23 17:27:38
-tags: [前端, JS, React, webpack]
+tags: [前端, JS, webpack, React]
 categories: 
-- React
 - webpack
+- React
 ---
 
 ## 使用webpack4搭建react 第一章
