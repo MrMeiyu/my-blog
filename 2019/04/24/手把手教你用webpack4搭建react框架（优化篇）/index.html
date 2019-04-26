@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="前端,JS,React,webpack,">
+  <meta name="keywords" content="前端,JS,webpack,React,">
 
 
 
@@ -82,7 +82,7 @@
 
 
 <meta name="description" content="使用webpack4搭建react 第二章 这篇属于优化篇，基础篇请前往这里 点击我">
-<meta name="keywords" content="前端,JS,React,webpack">
+<meta name="keywords" content="前端,JS,webpack,React">
 <meta property="og:type" content="article">
 <meta property="og:title" content="手把手教你用webpack4搭建react框架（优化篇）">
 <meta property="og:url" content="https://mrmeiyu.github.io/my-blog/2019/04/24/手把手教你用webpack4搭建react框架（优化篇）/index.html">
@@ -399,14 +399,15 @@
           
             
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/my-blog/2019/04/24/手把手教你用webpack4搭建react框架（优化篇）/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/my-blog/2019/04/24/手把手教你用webpack4搭建react框架（优化篇）/" itemprop="commentCount"></span>
-                </a>
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
               </span>
+              
+                <a href="/my-blog/2019/04/24/手把手教你用webpack4搭建react框架（优化篇）/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2019/04/24/手把手教你用webpack4搭建react框架（优化篇）/" itemprop="commentsCount"></span>
+                </a>
+              
             
           
 
@@ -455,7 +456,7 @@
 
           
 
-        </div>
+        </span></div>
       </header>
     
 
@@ -589,14 +590,29 @@
           
             <a href="/my-blog/tags/JS/" rel="tag"><i class="fa fa-tag"></i> JS</a>
           
-            <a href="/my-blog/tags/React/" rel="tag"><i class="fa fa-tag"></i> React</a>
-          
             <a href="/my-blog/tags/webpack/" rel="tag"><i class="fa fa-tag"></i> webpack</a>
+          
+            <a href="/my-blog/tags/React/" rel="tag"><i class="fa fa-tag"></i> React</a>
           
         </div>
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
       
       
 
@@ -647,7 +663,9 @@
 
   
     <div class="comments" id="comments">
+      <div id="SOHUCS"></div>
     </div>
+
   
 
 
@@ -1016,33 +1034,26 @@
 
 
 
-
-
-
-
-
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: true,
-        appId: 'gvnnhFsSk3wwYW7W53s3MQ2X-gzGzoHsz',
-        appKey: 'sUgtf4LK98kqGGND7Twy3zX9',
-        placeholder: 'Just go go',
-        avatar:'monsterid',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cyucBbwgo';
+      var conf = 'a08071260b3b796e0241946f98174e22';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
+  
+
+
+
+
+
+
 
 
 
@@ -1376,6 +1387,31 @@
   
 
   
+  
+  
+  <link rel="stylesheet" href="/my-blog/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/my-blog/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "default";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
   
 
   
