@@ -378,18 +378,18 @@ disqus:
 # Hypercomments
 #hypercomments_id:
 
-# changyan
+# changyan 畅言
 changyan:
-  enable: false
-  appid:
-  appkey:
+  enable: true
+  appid: cyucBbwgo
+  appkey: a08071260b3b796e0241946f98174e22
 
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid: gvnnhFsSk3wwYW7W53s3MQ2X-gzGzoHsz # your leancloud application appid
   appkey: sUgtf4LK98kqGGND7Twy3zX9 # your leancloud application appkey
   notify: true # mail notifier , https://github.com/xCss/Valine/wiki
@@ -440,8 +440,8 @@ gitment:
 #add_this_id:
 
 # Share
-#duoshuo_share: true
-
+duoshuo_share: true
+# 
 # NeedMoreShare2
 # This plugin is a pure javascript sharing lib which is useful in China.
 # See: https://github.com/revir/need-more-share2
@@ -454,11 +454,11 @@ gitment:
 #           Technorati,Posterous,Tumblr,GoogleBookmarks,Newsvine,
 #           Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
-    enable: false
+    enable: true
     options:
-      iconStyle: box
+      iconStyle: default
       boxForm: horizontal
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
@@ -574,7 +574,7 @@ busuanzi_count:
   page_pv_footer: 次
 
 
-# Tencent analytics ID
+# Tencent analytics ID 腾讯分析
 # tencent_analytics:
 
 # Tencent MTA ID
