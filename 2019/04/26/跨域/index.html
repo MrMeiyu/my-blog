@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="一个域名地址的组成   协议 子域名 主域名 端口号 请求资源地址     http://　 　www 　.abc.com 　:8080 　/script/jquery.js      当协议、子域名、主域名、端口号任意一个不相同时，都算作不同域js在不同的域之间进行数据传输或通信，就算作跨域（比如用ajax向一个不同的域请求数据，或者通过js获取页面中不同域的框架中(iframe)的数据 ）">
+<meta name="description" content="一个域名地址的组成">
 <meta name="keywords" content="前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="跨域">
 <meta property="og:url" content="https://mrmeiyu.github.io/my-blog/2019/04/26/跨域/index.html">
 <meta property="og:site_name" content="MeiYu的blog">
-<meta property="og:description" content="一个域名地址的组成   协议 子域名 主域名 端口号 请求资源地址     http://　 　www 　.abc.com 　:8080 　/script/jquery.js      当协议、子域名、主域名、端口号任意一个不相同时，都算作不同域js在不同的域之间进行数据传输或通信，就算作跨域（比如用ajax向一个不同的域请求数据，或者通过js获取页面中不同域的框架中(iframe)的数据 ）">
+<meta property="og:description" content="一个域名地址的组成">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-26T03:59:05.147Z">
+<meta property="og:updated_time" content="2019-04-26T06:09:07.675Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="跨域">
-<meta name="twitter:description" content="一个域名地址的组成   协议 子域名 主域名 端口号 请求资源地址     http://　 　www 　.abc.com 　:8080 　/script/jquery.js      当协议、子域名、主域名、端口号任意一个不相同时，都算作不同域js在不同的域之间进行数据传输或通信，就算作跨域（比如用ajax向一个不同的域请求数据，或者通过js获取页面中不同域的框架中(iframe)的数据 ）">
+<meta name="twitter:description" content="一个域名地址的组成">
 
 
 
@@ -452,7 +452,8 @@
       
 
       
-        <h2 id="一个域名地址的组成"><a href="#一个域名地址的组成" class="headerlink" title="一个域名地址的组成"></a>一个域名地址的组成</h2><table>
+        <h2 id="一个域名地址的组成"><a href="#一个域名地址的组成" class="headerlink" title="一个域名地址的组成"></a>一个域名地址的组成</h2><a id="more"></a>
+<table>
 <thead>
 <tr>
 <th>协议</th>
@@ -473,7 +474,6 @@
 </tbody>
 </table>
 <p><strong>当协议、子域名、主域名、端口号任意一个不相同时，都算作不同域</strong><br><strong>js在不同的域之间进行数据传输或通信，就算作跨域（比如用ajax向一个不同的域请求数据，或者通过js获取页面中不同域的框架中(iframe)的数据 ）</strong>  </p>
-<a id="more"></a>
 <h2 id="跨域方法"><a href="#跨域方法" class="headerlink" title="跨域方法"></a>跨域方法</h2><h3 id="1-frame之间（主域和子域或不同子域间）"><a href="#1-frame之间（主域和子域或不同子域间）" class="headerlink" title="1. frame之间（主域和子域或不同子域间）"></a>1. frame之间（主域和子域或不同子域间）</h3><p>默认情况下，跨域的frame之间不能访问彼此的window对象上的方法和属性。</p>
 <p><strong>情况1</strong>：<code>www.a.com</code> 和 <code>child.a.com</code>的互相访问彼此window对象上的方法和属性：<br><strong>解决办法</strong>：将两个页面的<code>document.domain</code>设成相同的域名（只能设置成自身或更高一级的父域，且主域必须相同，如<code>a.com</code>或<code>www.a.com</code>，必须显式设置，即使域名与设置值相同）</p>
 <p><strong>情况2</strong>：在<code>www.a.com</code>页面通过ajax直接请求<code>child.a.com</code>：<br><strong>解决办法</strong>：即使设置了相同的<code>document.domain</code>（只适用于不同子域的框架间的交互）也不行。除了使用jsonp，还可以用一个隐藏的<code>iframe</code>来做代理（与<code>child.a.com</code>同域），通过该iframe请求<code>child.a.com</code>的数据，设置<code>www.a.com</code>和<code>iframe</code>的<code>document.domain</code>为相同域名。然后<code>www.a.com</code>访问<code>iframe</code>从<code>child.a.com</code>获取到的数据。</p>
