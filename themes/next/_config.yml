@@ -813,6 +813,10 @@ vendors:
   # https://github.com/revir/need-more-share2
   needMoreShare2:
 
+# Online contact 
+daovoice: true
+daovoice_app_id: 8eb91965
+
 
 # Assets
 css: css
