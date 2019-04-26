@@ -1,5 +1,5 @@
 ---
-title: js数组的基本方法
+title: JS数组的基本方法
 date: 2019-04-26 10:59:29
 tags: [前端, JS]
 categories: 
