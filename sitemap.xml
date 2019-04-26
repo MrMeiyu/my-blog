@@ -86,14 +86,14 @@
   </url>
   
   <url>
-    <loc>https://mrmeiyu.github.io/my-blog/categories/index.html</loc>
+    <loc>https://mrmeiyu.github.io/my-blog/about/index.html</loc>
     
     <lastmod>2019-04-26T03:38:40.351Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mrmeiyu.github.io/my-blog/about/index.html</loc>
+    <loc>https://mrmeiyu.github.io/my-blog/categories/index.html</loc>
     
     <lastmod>2019-04-26T03:38:40.351Z</lastmod>
     
@@ -128,13 +128,6 @@
   </url>
   
   <url>
-    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/hello-world/</loc>
-    
-    <lastmod>2019-04-26T03:38:40.324Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://mrmeiyu.github.io/my-blog/2019/04/19/hexo%E4%BD%BF%E7%94%A8%E9%9A%8F%E6%9C%BA%E8%83%8C%E6%99%AF%E5%9B%BE/</loc>
     
     <lastmod>2019-04-26T03:38:40.324Z</lastmod>
@@ -142,14 +135,21 @@
   </url>
   
   <url>
-    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/HTML5%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86/</loc>
+    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/hello-world/</loc>
+    
+    <lastmod>2019-04-26T03:38:40.324Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://mrmeiyu.github.io/my-blog/404/index.html</loc>
     
     <lastmod>2019-04-26T03:38:40.323Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://mrmeiyu.github.io/my-blog/404/index.html</loc>
+    <loc>https://mrmeiyu.github.io/my-blog/2019/04/26/HTML5%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86/</loc>
     
     <lastmod>2019-04-26T03:38:40.323Z</lastmod>
     
