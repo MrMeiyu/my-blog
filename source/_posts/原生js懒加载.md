@@ -1,5 +1,5 @@
 ---
-title: 原生js懒加载
+title: 原生JS懒加载
 date: 2019-04-26 11:20:03
 tags: [前端, JS]
 categories:
