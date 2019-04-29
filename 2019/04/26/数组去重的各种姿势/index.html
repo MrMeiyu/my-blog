@@ -99,7 +99,7 @@
 <meta property="og:site_name" content="MeiYu的blog">
 <meta property="og:description" content="最常用的几种方法 目前我只能想到数组中纯数字、数字加字符串、对象，所以写了几个个人觉得还可以用的方法作为记录">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-26T03:38:40.351Z">
+<meta property="og:updated_time" content="2019-04-26T08:15:00.425Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数组去重的各种姿势">
 <meta name="twitter:description" content="最常用的几种方法 目前我只能想到数组中纯数字、数字加字符串、对象，所以写了几个个人觉得还可以用的方法作为记录">
@@ -437,7 +437,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  363
+                  375
                 </span>
               
 
@@ -484,18 +484,19 @@
 <ul>
 <li>最简单 - 纯数字</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// 注意： IE8 是不支持indexOf方法</span><br><span class="line">// 新建一数组，遍历传入数组的值，值不在新数组就 push 到新数组里</span><br><span class="line">function unique(arr) &#123;</span><br><span class="line">  let newArr = [];</span><br><span class="line">  for (let i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">    if (newArr.indexOf(arr[i]) == -1 ) &#123;</span><br><span class="line">      newArr.push(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return newArr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let a = [1, 1, 2, 3, 4, 3];</span><br><span class="line">console.log(unique(a)); // [1, 2, 3, 4]</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 注意： IE8 是不支持indexOf方法</span></span><br><span class="line"><span class="comment">// 新建一数组，遍历传入数组的值，值不在新数组就 push 到新数组里</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> newArr = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span> (newArr.indexOf(arr[i]) == <span class="number">-1</span> ) &#123;</span><br><span class="line">      newArr.push(arr[i]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newArr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> a = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">3</span>];</span><br><span class="line"><span class="built_in">console</span>.log(unique(a)); <span class="comment">// [1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>数组下标法 - 数字、字符串</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 实现思路：如果当前数组的第i项在当前数组中第一次出现的位置不是i，那么表示第i项是重复的，忽略掉。否则存入结果数组</span><br><span class="line">function unique(arr) &#123;</span><br><span class="line">  let newArr = [];</span><br><span class="line">  for(let i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">    if(arr.indexOf(arr[i]) === i)&#123;</span><br><span class="line">      newArr.push(arr[i])</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return newArr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">let a = [1, 1, 2, 3, &apos;a&apos;, &apos;a&apos;];</span><br><span class="line">console.log(unique(a));</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 实现思路：如果当前数组的第i项在当前数组中第一次出现的位置不是i，那么表示第i项是重复的，忽略掉。否则存入结果数组</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">unique</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> newArr = [];</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">    <span class="keyword">if</span>(arr.indexOf(arr[i]) === i)&#123;</span><br><span class="line">      newArr.push(arr[i])</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newArr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> a = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="string">'a'</span>, <span class="string">'a'</span>];</span><br><span class="line"><span class="built_in">console</span>.log(unique(a));</span><br></pre></td></tr></table></figure>
 <ul>
 <li>ES6的写法</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  let a = [1, 1, 2, 3, 4, 3];</span><br><span class="line">  console.log(Array.from(new Set(a))); // [1, 2, 3, 4]</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">2. 前面都是的数组中全是数字，现在来看看数组中是对象的情况</span><br></pre></td></tr></table></figure>
-<p>  // 这是我们的数据<br>  let arr = [<br>    {<br>      name: ‘xiaoming’,<br>      id: 1<br>    },<br>    {<br>      name: ‘xiaohong’,<br>      id: 1<br>    },<br>    {<br>      name: ‘xiaozhang’,<br>      id: 2<br>    }<br>  ]</p>
-<p>  // reduce<br>  let obj = {};<br>  let newArr = arr.reduce((cur, next) =&gt; {<br>    obj[next.id]<br>      ? ‘’<br>      : obj[next.id] = true &amp;&amp; cur.push(next);<br>    return cur;<br>  }, [])<br>  console.log(newArr);<br><code>`</code></p>
-
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a = [<span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">3</span>];</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(a))); <span class="comment">// [1, 2, 3, 4]</span></span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>前面都是的数组中全是数字，现在来看看数组中是对象的情况</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">// 这是我们的数据</span><br><span class="line">let arr = [</span><br><span class="line">  &#123;</span><br><span class="line">    name: &apos;xiaoming&apos;,</span><br><span class="line">    id: 1</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: &apos;xiaohong&apos;,</span><br><span class="line">    id: 1</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    name: &apos;xiaozhang&apos;,</span><br><span class="line">    id: 2</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br><span class="line"></span><br><span class="line">// reduce</span><br><span class="line">let obj = &#123;&#125;;</span><br><span class="line">let newArr = arr.reduce((cur, next) =&gt; &#123;</span><br><span class="line">  obj[next.id]</span><br><span class="line">    ? &apos;&apos;</span><br><span class="line">    : obj[next.id] = true &amp;&amp; cur.push(next);</span><br><span class="line">  return cur;</span><br><span class="line">&#125;, [])</span><br><span class="line">console.log(newArr);</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -671,7 +672,7 @@
               
                 <a href="/my-blog/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -682,7 +683,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/my-blog/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -693,7 +694,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/my-blog/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
