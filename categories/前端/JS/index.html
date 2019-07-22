@@ -94,7 +94,7 @@
 <meta name="description" content="学习使我快乐">
 <meta property="og:type" content="website">
 <meta property="og:title" content="MeiYu的blog">
-<meta property="og:url" content="https://mrmeiyu.github.io/my-blog/categories/前端/js/index.html">
+<meta property="og:url" content="https://mrmeiyu.github.io/my-blog/categories/前端/JS/index.html">
 <meta property="og:site_name" content="MeiYu的blog">
 <meta property="og:description" content="学习使我快乐">
 <meta property="og:locale" content="zh-Hans">
@@ -130,13 +130,13 @@
 
 
 
-  <link rel="canonical" href="https://mrmeiyu.github.io/my-blog/categories/前端/js/">
+  <link rel="canonical" href="https://mrmeiyu.github.io/my-blog/categories/前端/JS/">
 
 
 
 
 
-  <title>分类: js | MeiYu的blog</title>
+  <title>分类: JS | MeiYu的blog</title>
   
 
 
@@ -318,7 +318,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>js<small>分类</small>
+        <h1>JS<small>分类</small>
         </h1>
       </div>
 
@@ -330,17 +330,69 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/my-blog/2019/04/25/JS中的交集、并集、差集/" itemprop="url">
+            <a class="post-title-link" href="/my-blog/2019/04/26/上传图片预览/" itemprop="url">
               
-                <span itemprop="name">JS中的交集、并集、差集</span>
+                <span itemprop="name">上传图片预览</span>
               
             </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-04-25T17:21:24+08:00" content="2019-04-25">
-          04-25
+        <time class="post-time" itemprop="dateCreated" datetime="2019-04-26T11:51:41+08:00" content="2019-04-26">
+          04-26
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/my-blog/2019/04/26/原生JS懒加载/" itemprop="url">
+              
+                <span itemprop="name">原生JS懒加载</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-04-26T11:20:03+08:00" content="2019-04-26">
+          04-26
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+            <a class="post-title-link" href="/my-blog/2019/04/26/JS数组的基本方法/" itemprop="url">
+              
+                <span itemprop="name">JS数组的基本方法</span>
+              
+            </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-04-26T10:59:29+08:00" content="2019-04-26">
+          04-26
         </time>
       </div>
 
@@ -407,7 +459,7 @@
               
                 <a href="/my-blog/archives/">
               
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">20</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -418,7 +470,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/my-blog/categories/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -429,7 +481,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/my-blog/tags/index.html">
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1017,79 +1069,6 @@
 
           proceedsearch();
         }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-  
-  <link rel="stylesheet" href="/my-blog/lib/needsharebutton/needsharebutton.css">
-
-  
-  
-  <script src="/my-blog/lib/needsharebutton/needsharebutton.js"></script>
-
-  <script>
-    
-      pbOptions = {};
-      
-          pbOptions.iconStyle = "default";
-      
-          pbOptions.boxForm = "horizontal";
-      
-          pbOptions.position = "bottomCenter";
-      
-          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      
-      new needShareButton('#needsharebutton-postbottom', pbOptions);
-    
-    
-  </script>
-
-  
-
-  
-
-  
-
-  
-
-</body>
-</html>
-
       });
     }
 
