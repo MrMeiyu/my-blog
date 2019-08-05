@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[常见的网页布局方式]]></title>
+    <url>%2Fmy-blog%2F2019%2F08%2F05%2F%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[前端常见的布局方式瀑布流方案的布局方案 利用column-count和break-inside这两个CSS3属性 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt; &lt;head&gt; &lt;meta charset="UTF-8" /&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt; &lt;meta http-equiv="X-UA-Compatible" content="ie=edge" /&gt; &lt;title&gt;瀑布流布局&lt;/title&gt; &lt;style&gt; body &#123; margin: 0; &#125; .box-wrapper &#123; /*分几列*/ column-count: 2; width: 100%; /* 列间距 */ column-gap: 10px; &#125; .box-item &#123; break-inside: avoid; width: 100%; height: 100px; margin-bottom: 10px; background: #ddd; column-gap: 0; text-align: center; color: #fff; font-size: 40px; &#125; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="box-wrapper"&gt; &lt;div class="box-item" style="height: 100px"&gt;1&lt;/div&gt; &lt;div class="box-item" style="height: 300px"&gt;2&lt;/div&gt; &lt;div class="box-item" style="height: 400px"&gt;3&lt;/div&gt; &lt;div class="box-item" style="height: 100px"&gt;4&lt;/div&gt; &lt;div class="box-item" style="height: 300px"&gt;5&lt;/div&gt; &lt;div class="box-item" style="height: 600px"&gt;6&lt;/div&gt; &lt;div class="box-item" style="height: 400px"&gt;7&lt;/div&gt; &lt;div class="box-item" style="height: 300px"&gt;8&lt;/div&gt; &lt;div class="box-item" style="height: 700px"&gt;9&lt;/div&gt; &lt;div class="box-item" style="height: 100px"&gt;10&lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>HTMl</category>
+        <category>CSs</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>CSS</tag>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[HTML5 Web Speech API]]></title>
     <url>%2Fmy-blog%2F2019%2F07%2F22%2FHTML5-Web-Speech-API%2F</url>
     <content type="text"><![CDATA[前言 之所以写这篇文章主要就是在我司的老项目中有个需求，此需求就是根据页面重量播放语音，比如：56KG,那么页面就会读出来这个数字 Speech Synthesis API 因为之前没有过这种需求所以只能去百度下，然后就发现了 HTMl5 SpeechSynthesis API HTML5 中 Web Speech 其实有两类的：a. 是 Speech Recognition 代表的是语音识别,通俗来说就是语音转文字;b. 是 Speech Synthesis 代表的是语音合成,通俗来说就是文字转语音. 使用方式 语音识别 123456789101112// 创建实例const demo = webkitSpeechRecognition();// 开demo.start();// 关demo.stop();// 事件机制demo.onresult = function(e) &#123; console.log(e);&#125; 详细的地址参考 语音合成 123// 举个栗子const demo = new window.SpeechSynthesisUtterance('hello world');window.speechSynthesis.speak(demo); 上面这段代码可以试着放在控制台然后就可以听到声音了 SpeechSynthesisUtterance 和 speechSynthesis 为核心的API 其他方法和属性请看这里,走你 以上就是这次所学，因为太简单了，所以没有写过多的代码。还有这个API其实以后会应用的更多，比如适合“盲人”。]]></content>
@@ -176,8 +191,8 @@
       <tags>
         <tag>前端</tag>
         <tag>JS</tag>
-        <tag>React</tag>
         <tag>webpack</tag>
+        <tag>React</tag>
       </tags>
   </entry>
   <entry>
@@ -191,8 +206,8 @@
       <tags>
         <tag>前端</tag>
         <tag>JS</tag>
-        <tag>React</tag>
         <tag>webpack</tag>
+        <tag>React</tag>
       </tags>
   </entry>
   <entry>
