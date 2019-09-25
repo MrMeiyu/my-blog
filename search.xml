@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[前端小技巧《JS》]]></title>
+    <url>%2Fmy-blog%2F2019%2F09%2F25%2F%E5%89%8D%E7%AB%AF%E5%B0%8F%E6%8A%80%E5%B7%A7%E3%80%8AJS%E3%80%8B%2F</url>
+    <content type="text"><![CDATA[总结一些前端的小技巧 《JS》篇 给数字每三位加上逗号 1234567function commafy(num)&#123; return num &amp;&amp; num .toString() .replace(/(\d)(?=(\d&#123;3&#125;)+\.)/g, function($1, $2)&#123; return $2 + ','; &#125;);&#125; js求平面两点之间的距离 12345678// 数据可以以数组方式存储，也可以是对象方式let a = &#123;x:'6', y:10&#125;, b = &#123;x: 8, y: 20&#125;; function distant(a,b)&#123; let dx = Number(a.x) - Number(b.x) let dy = Number(a.y) - Number(b.y) return Math.pow(dx*dx + dy*dy, .5) &#125;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>JS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[前端小技巧《CSS》]]></title>
+    <url>%2Fmy-blog%2F2019%2F09%2F25%2F%E5%89%8D%E7%AB%AF%E5%B0%8F%E6%8A%80%E5%B7%A7%E3%80%8ACSS%E3%80%8B%2F</url>
+    <content type="text"><![CDATA[总结一些前端的小技巧 《CSS》篇 css 相关 修改 chrome 记住密码后自动填充表单的黄色背景 123456input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill &#123; background-color: rgb(250, 255, 189); /* #FAFFBD; */ background-image: none; color: rgb(0, 0, 0);&#125; 让页面里的字体变清晰 1-webkit-font-smoothing: antialiased; 让 overflow:scroll 平滑滚动 1-webkit-overflow-scrolling: touch; 开启硬件加速 1234567// 目前，像Chrome/Filefox/Safari/IE9+以及最新版本Opera都支持硬件加速，当检测到某个DOM元素应用了某些CSS规则时就会自动开启，从而解决页面闪白，保证动画流畅。.css &#123; -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); -ms-transform: translate3d(0,0,0); transform: translate3d(0,0,0);&#125; css 禁用鼠标事件 12345.disabled &#123; pointer-events: none; cursor: default; opacity: 0.6;&#125; css禁止用户选择 12345678body &#123; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;&#125;]]></content>
+      <categories>
+        <category>前端</category>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[React Hooks 组件的提升]]></title>
+    <url>%2Fmy-blog%2F2019%2F08%2F24%2FReact-Hooks-%E7%BB%84%E4%BB%B6%E7%9A%84%E5%8C%BA%E5%88%86%2F</url>
+    <content type="text"><![CDATA[类组件的不足facebook 对类组件不足的总结 状态逻辑复用困难 缺少复用机制 渲染属性和高阶组件（HOC）组件导致层级宕余 趋向复杂难以维护 生命周期函数混杂不想干逻辑 相干逻辑分散在不同生命周期 this指向困扰 内联函数过度创建新句柄 类成员函数不能保证this Hooks 优化类组件的三大问题 函数组件无this问题 自定义Hook方便复用状态逻辑 副作用的关注点分离]]></content>
+      <categories>
+        <category>前端</category>
+        <category>React</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>JS</tag>
+        <tag>React</tag>
+        <tag>react-hooks</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[常见的网页布局方式]]></title>
     <url>%2Fmy-blog%2F2019%2F08%2F05%2F%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%E6%96%B9%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[前端常见的布局方式瀑布流方案的布局方案 利用column-count和break-inside这两个CSS3属性 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647&lt;!DOCTYPE html&gt;&lt;html lang="en"&gt; &lt;head&gt; &lt;meta charset="UTF-8" /&gt; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt; &lt;meta http-equiv="X-UA-Compatible" content="ie=edge" /&gt; &lt;title&gt;瀑布流布局&lt;/title&gt; &lt;style&gt; body &#123; margin: 0; &#125; .box-wrapper &#123; /*分几列*/ column-count: 2; width: 100%; /* 列间距 */ column-gap: 10px; &#125; .box-item &#123; break-inside: avoid; width: 100%; height: 100px; margin-bottom: 10px; background: #ddd; column-gap: 0; text-align: center; color: #fff; font-size: 40px; &#125; &lt;/style&gt; &lt;/head&gt; &lt;body&gt; &lt;div class="box-wrapper"&gt; &lt;div class="box-item" style="height: 100px"&gt;1&lt;/div&gt; &lt;div class="box-item" style="height: 300px"&gt;2&lt;/div&gt; &lt;div class="box-item" style="height: 400px"&gt;3&lt;/div&gt; &lt;div class="box-item" style="height: 100px"&gt;4&lt;/div&gt; &lt;div class="box-item" style="height: 300px"&gt;5&lt;/div&gt; &lt;div class="box-item" style="height: 600px"&gt;6&lt;/div&gt; &lt;div class="box-item" style="height: 400px"&gt;7&lt;/div&gt; &lt;div class="box-item" style="height: 300px"&gt;8&lt;/div&gt; &lt;div class="box-item" style="height: 700px"&gt;9&lt;/div&gt; &lt;div class="box-item" style="height: 100px"&gt;10&lt;/div&gt; &lt;/div&gt; &lt;/body&gt;&lt;/html&gt;]]></content>
@@ -191,8 +232,8 @@
       <tags>
         <tag>前端</tag>
         <tag>JS</tag>
-        <tag>webpack</tag>
         <tag>React</tag>
+        <tag>webpack</tag>
       </tags>
   </entry>
   <entry>
@@ -206,8 +247,8 @@
       <tags>
         <tag>前端</tag>
         <tag>JS</tag>
-        <tag>webpack</tag>
         <tag>React</tag>
+        <tag>webpack</tag>
       </tags>
   </entry>
   <entry>
